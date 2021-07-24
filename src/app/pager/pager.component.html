@@ -1,0 +1,4 @@
+<div>Start: {{start}}, Visible: {{visible}}</div>
+<div #container class="container" (resizeSensor)="onResize($event)">
+  <p #messageParagraph *ngFor="let m of displayedMessages">{{m}}</p>
+</div>
